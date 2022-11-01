@@ -23,6 +23,7 @@ body{
   position: relative;
   font-family: var(--fonth1);
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .flor{
   height: 50px;
