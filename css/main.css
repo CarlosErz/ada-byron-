@@ -4,12 +4,20 @@ body{
   margin: 0;
   padding: 0;
 }
+body::-webkit-scrollbar{
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--deco);
+  border-radius: 5px;
+}
 .logo center{
   margin: 30px 0 0 0 ;
 }
 .title{
   margin: 50px 0 0 0;
   text-align: center;
+  cursor: pointer;
 }
 .title_hijo{
   display: flex;
@@ -23,7 +31,6 @@ body{
   position: relative;
   font-family: var(--fonth1);
   letter-spacing: 2px;
-  cursor: pointer;
 }
 .flor{
   height: 50px;
@@ -46,6 +53,7 @@ body{
 .nombre:hover:after{
   transform-origin: left;
   transform: scaleX(1);
+  cursor: pointer;
 }
 .img-padre{
  content: "";
@@ -64,9 +72,18 @@ align-items: flex-end
   width: 70%;
   text-align: justify;
   hyphens: auto;
+  line-height : 30px;
+  
 }
 
 span{
   color: var(--deco);
   font-family: var(--fontp);
+}
+/* Ejecuta el CSS en pantallas cuyo ancho tenga como mínimo 768px */
+/* Es decir, lo ejecuta a partir de 768px en adelante */
+@media screen and (min-width:768px) { 
+  .nombre{
+    	width:70%;
+	}
 }
