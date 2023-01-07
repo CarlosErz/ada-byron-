@@ -14,28 +14,36 @@
   <link rel="stylesheet" href="css/normalize.css">
   <title>Registro</title>
 </head>
+
 <body>
   <div class="register">
     <a href="index.html">
       <img src="assets/logo.svg" alt="Logo" class="logo">
     </a>
-    <h1 class="Title-form">Iniciar Sesión</h1>
+    <h1 class="Title-form">Registrate</h1>
     <form action="" method="" class="form" id="form">
       <li>
-        <label class="userguide">Usuario</label>
-        <input type="text" class="input" placeholder="Nombre" id="user" name="usuario">
-        <span class="icon"><img src="assets/user.svg" alt="User" height="20px"></span>
+        <span id="icon" class="icon"><img src="assets/user.svg" alt="User" height="20px"></span>
+        <input type="text" class="input" placeholder="Usuario" id="user" name="usuario">
+
       </li>
       <li>
-        <label class="userguide" e>Contraseña</label>
-        <input type="password" class="input" placeholder="Ingresa tu contraseña" id="contra" name="contra">
-        <span class="icon-candado"><img src="assets/candado.svg" alt="User" height="24px"></span>
+        <input type="password" class="input" placeholder="Contraseña" id="contra" name="contra">
+        <span class="icon-candado"><img src="assets/candado.svg" alt="User" height="20px"></span>
         <span id="eye">
           <i id="ojo" class="eye_clost"></i>
         </span>
       </li>
-      <li><input type="submit" value="Iniciar Sesión" class="btn"></li>
-      <p class="txt">No tienes cuenta <a href="registrar.html" class="element">Registrate.</a></p>
+      <li>
+        <input type="password" class="input" placeholder="Confirmar Contraseña" id="confContra" name="contraEx">
+        <span class="icon-candado"><img src="assets/candado.svg" alt="User" height="20px"></span>
+        <span id="eyes2">
+          <i id="ojo" class="eye_clost"></i>
+        </span>
+        <p class="terminos">Acepto Terminos y condiciones <input type="checkbox" name="Terminos" id=""></p>
+      </li>
+      <li><input type="submit" value="Registrarse" class="btn"></li>
+      <p class="txt">Ya tengo cuenta <a href="index.html" class="element">Iniciar Sesión</a></p>
     </form>
   </div>
   <script src="js/backend.js"></script>

@@ -1,0 +1,13 @@
+:root{
+  --principal:#469BFF;
+  --hover:#1573de;
+  --secundario:#CDE2FA;
+  --logo:3.7rem;
+  --radius:2rem;
+  --title:2rem;
+  --tono1:#BFBFBF;
+  --tono2:#fff;
+  --input-h:5.3rem;
+  --input-b:3px solid #469BFF;
+  --font:'Montserrat', sans-serif;
+}
